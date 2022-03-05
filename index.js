@@ -38,7 +38,7 @@ client.on("ready", () => {
 
     //Define voice channel we'll be changing
     const channel = guild.channels.cache.get(channelID);
-    channel.setName(`Gather Online: ${activePlayers}`);
+    channel.setName(`ConcaveTown: ${activePlayers} Online`);
     console.log(`ActivePlayers: ${activePlayers}`);
     console.log("Name should be set");
   }, 60000);
