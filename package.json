@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@gathertown/gather-game-client": "^34.0.0",
-    "discord.js": "^13.6.0"
+    "discord.js": "^13.6.0",
+    "isomorphic-ws": "^4.0.1"
   }
 }
