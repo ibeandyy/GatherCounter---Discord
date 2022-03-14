@@ -39,6 +39,10 @@ client.on("ready", () => {
     //Define voice channel we'll be changing
     const channel = guild.channels.cache.get(channelID);
     //Set voicechannel name
-    channel.setName(`Gather Online: ${activePlayers}`);
+    try {
+      channel.setName(`Gather Online: ${activePlayers}`);
+    } catch (error) {
+      console.error(error);
+    }
   }, 60000);
 });
