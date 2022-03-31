@@ -25,6 +25,7 @@ let object = game.players;
 
 //Listen for the Discord Ready event
 client.on("ready", () => {
+  console.log("ready");
   //Set guild equal to TestCave's guild ID
   const guild = client.guilds.cache.get(guildID);
   setInterval(() => {
@@ -43,6 +44,8 @@ client.on("ready", () => {
       channel.setName(`Gather Online: ${activePlayers}`);
     } catch (error) {
       console.error(error);
+    } finally {
+      x = [];
     }
-  }, 60000);
+  }, 6000);
 });
